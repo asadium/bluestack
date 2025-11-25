@@ -147,7 +147,7 @@ curl -X PUT http://localhost:4566/blob/myaccount/mycontainer
 ```bash
 curl -X PUT \
   -H "Content-Type: text/plain" \
-  -d "Hello, Bluestack!" \
+  -d "Hello, Bluestack" \
   http://localhost:4566/blob/myaccount/mycontainer/myblob.txt
 ```
 
