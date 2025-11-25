@@ -24,8 +24,17 @@ profile.cov
 go.work
 go.work.sum
 
+# Build output directory
+bin/
+
+# Binary output (safety net for binaries built in root)
+bluestack
+
 # env file
 .env
+
+# data directory
+data/
 
 # Editor/IDE
 # .idea/

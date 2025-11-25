@@ -91,6 +91,11 @@ func Int(key string, value int) Field {
 	return zap.Int(key, value)
 }
 
+// Int64 creates an int64 field.
+func Int64(key string, value int64) Field {
+	return zap.Int64(key, value)
+}
+
 // ErrorField creates an error field.
 func ErrorField(err error) Field {
 	return zap.Error(err)

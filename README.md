@@ -145,9 +145,17 @@ curl -X PUT http://localhost:4566/blob/myaccount/mycontainer
 #### Upload a Blob
 
 ```bash
-echo "Hello, Bluestack!" | curl -X PUT \
+curl -X PUT \
   -H "Content-Type: text/plain" \
-  --data-binary @- \
+  -d "Hello, Bluestack!" \
+  http://localhost:4566/blob/myaccount/mycontainer/myblob.txt
+```
+
+Or upload from a file:
+```bash
+curl -X PUT \
+  -H "Content-Type: text/plain" \
+  --data-binary @file.txt \
   http://localhost:4566/blob/myaccount/mycontainer/myblob.txt
 ```
 
